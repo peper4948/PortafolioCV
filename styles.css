@@ -15,6 +15,28 @@
   overflow: hidden;
 }
 
+/* ─── Navbar responsive ──────────────────────────────────────────────────────── */
+@media (max-width: 991px) {
+    .navbar-brand img {
+        height: 35px;
+    }
+
+    .navbar-brand span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        height: 28px;
+    }
+
+    .navbar-brand span {
+        font-size: 12px;
+    }
+}
+
+
 /* Fondo */
 .home__background {
   position: absolute;
