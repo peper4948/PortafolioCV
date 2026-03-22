@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <title>José Pablo Ramírez Fdez - Portfolio</title>
+  <meta name="description"
+    content="Explore the projects and skills of José Pablo Ramírez in development and technology." />
+  <meta name="author" content="José Pablo Ramírez" />
+  <meta property="og:title" content="JoséPabloRamírez - Portfolio">
+  <meta property="og:description"
+    content="Portfolio of José Pablo Ramírez — projects, skills, and passion for development.">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="media.css" media="(max-width: 991px)" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.3/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.3/dist/sweetalert2.all.min.js"></script>
+  <script src="https://kit.fontawesome.com/7b5fb2de65.js" crossorigin="anonymous" async></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("gnFRytAjKYRiIuBQu");
+    })();
+  </script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+
+      <!-- Logo + nombre -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/logo.png" alt="Logo" height="50" class="me-2">
+        <span class="text-white fw-semibold">JpRamírez - Portafolio</span>
+      </a>
+
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-3">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="home">
+
+    <div class="home__background"></div>
+
+    <div class="home__content">
+      <img src="assets/FotoPp.jpg" class="home__profile" alt="Foto de José Pablo Ramírez">
+
+      <div class="home__description">
+        <h1 class="home__title">José Pablo Ramírez</h1>
+        <span class="home__title--secondary">
+          Estudiante Ingeniería en Sistemas
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCRIPT -->
+  <script>
+    const navbar = document.querySelector(".navbar");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        navbar.style.top = "0";
+      } else {
+        navbar.style.top = "-80px";
+      }
+    });
+  </script>
+  <section class="about-container">
+    <div class="section-header">
+      <h2 class="section-title">Sobre <span class="section-accent">mí</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="card-juego-wrapper">
+
+
+      <div class="card-juego">
+
+        <!-- HEADER1 -->
+        <div class="card-header">
+          <div class="header-text">
+            <h2>Profesional</h2>
+            <h3>José Pablo</h3>
+          </div>
+          <span class="level">Lvl 19</span>
+        </div>
+
+        <!-- INFO1 -->
+        <div class="card-info">
+          <p><strong>Clase:</strong> Estudiante de Ingeniería en Sistemas</p>
+          <p><strong>Enfoque:</strong> Desarrollo de Software</p>
+          <p><strong>Formación:</strong> CCNA I & II | Scrum (SFC, SMC)</p>
+          <p><strong>Estado:</strong> En formación</p>
+        </div>
+
+        <!-- STATS1 -->
+        <div class="card-stats">
+          <div class="stat">
+            <span>Disciplina</span>
+            <span class="level-high">Alto</span>
+          </div>
+          <div class="stat">
+            <span>Creatividad</span>
+            <span class="level-mid">Medio</span>
+          </div>
+          <div class="stat">
+            <span>Lógica</span>
+            <span class="level-high">Alto</span>
+          </div>
+        </div>
+
+        <!-- SKILLS1 -->
+        <div class="card-skills">
+          <span class="skill">Java <small>(Sólido)</small></span>
+          <span class="skill">Spring Boot <small>(En progreso)</small></span>
+          <span class="skill">HTML & CSS <small>(En progreso)</small></span>
+          <span class="skill">Python <small>(Básico)</small></span>
+          <span class="skill">Redes <small>(Intermedio)</small></span>
+        </div>
+
+        <!-- LOGROS1 -->
+        <div class="card-achievements">
+          <p>Portafolio Creado ✅</p>
+          <p>Proyectos Web ✅</p>
+          <p>Próximamente: App Móvil 🔒</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-juego2">
+
+      <!-- HEADER2 -->
+      <div class="card-header2">
+        <div class="header-text">
+          <h2>Personal</h2>
+          <h3>José Pablo</h3>
+        </div>
+        <span class="level2">Lvl 19</span>
+      </div>
+
+      <!-- INFO 2-->
+      <div class="card-info2">
+        <p><strong>Fuera del código:</strong> Música y deporte</p>
+        <p><strong>Me define:</strong> Constancia y enfoque</p>
+        <p><strong>Me gusta:</strong> Aprender y crear</p>
+      </div>
+
+      <!-- STATS 2-->
+      <div class="card-stats2">
+        <div class="stat2">
+          <span>Ritmo</span>
+          <span class="level-high">Alto</span>
+        </div>
+        <div class="stat2">
+          <span>Energía</span>
+          <span class="level-high">Alto</span>
+        </div>
+        <div class="stat2">
+          <span>Motivación</span>
+          <span class="level-high">Alta</span>
+        </div>
+      </div>
+
+      <!-- SKILLS2 -->
+      <div class="card-skills2">
+        <span class="skill2">Música<small>(Alto)</small></span>
+        <span class="skill2">Deporte<small>(Sólido)</small></span>
+        <span class="skill2">Familia<small>(Prioridad)</small></span>
+        <span class="skill2">Videojuegos<small>(Intermedio)</small></span>
+        <span class="skill2">Tecnología <small>(Pasión)</small></span>
+      </div>
+
+      <!-- LOGROS 2-->
+      <div class="card-achievements2">
+        <p>Música, estudio y deporte en sintonía ✅</p>
+        <p>Estabilidad personal ✅</p>
+        <p>Crecimiento continuo ✅</p>
+      </div>
+    </div>
+
+
+
+    <div class="card-juego3">
+
+      <!-- HEADER3 -->
+      <div class="card-header3">
+        <div class="header-text">
+          <h2>Ambición</h2>
+          <h3>José Pablo</h3>
+        </div>
+        <span class="level3">Lvl 19</span>
+      </div>
+
+      <!-- INFO3 -->
+      <div class="card-info3">
+        <p><strong>Meta:</strong> Full Stack Developer</p>
+        <p><strong>Visión:</strong> Trabajar en Proyectos de alto impacto</p>
+        <p><strong>Horizonte:</strong> 2/3 años</p>
+      </div>
+
+      <!-- STATS 2-->
+      <div class="card-stats2">
+        <div class="stat2">
+          <span>Enfoque</span>
+          <span class="level-high">Alto</span>
+        </div>
+        <div class="stat2">
+          <span>Consistencia</span>
+          <span class="level-mid">Alto</span>
+        </div>
+        <div class="stat2">
+          <span>Paciencia</span>
+          <span class="level-mid">Medio</span>
+        </div>
+      </div>
+
+      <!-- SKILLS3 -->
+      <div class="card-skills3">
+        <span class="skill3">Scrum Master Certified <small>(Certificado)</small></span>
+        <span class="skill3">Python Certified <small>(En Progreso)</small></span>
+        <span class="skill3">App Móvil <small>(Proximamente)</small></span>
+        <span class="skill3">Freelance <small>(Futuro)</small></span>
+      </div>
+
+      <!-- LOGROS1 -->
+      <div class="card-achievements3">
+        <p>Portafolio Publicado ✅</p>
+        <p>Primera Pasantía 🔒</p>
+        <p>Primer Proyecto Formal 🔒</p>
+      </div>
+    </div>
+    </div>
+
+
+  </section>
+  <section class="proyectos-container">
+    <div class="section-header">
+      <h2 class="section-title">Mis <span class="section-accent">proyectos</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+
+    <div class="card-proyecto-barber" style="width: 18rem;">
+      <div class="card-body">
+        <img src="assets/BarberShop.png" class="imagenBarber card-img-top" alt="40px">
+        <h5 class="card-title">BarberShop</h5>
+        <p class="card-text">Proyecto BarberShop usando HTML,CSS, Bootstrap y Springboot Java</p>
+        <a href="https://github.com/peper4948/BarberShop2.0.git" class="btn-repo-barber">Ir al repositorio</a>
+      </div>
+    </div>
+
+    <div class="card-proyecto-Blcm" style="width: 18rem;">
+      <div class="card-body">
+        <img src="assets/BLCM.png" class="imagenBlcm card-img-top" alt="40px">
+        <h5 class="card-title">Página Banda Lírica Cantonal de Moravia</h5>
+        <p class="card-text">Proyecto personal para la banda lírica cantonal de Moravia</p>
+        <a href="https://github.com/peper4948/BLCM.git" class="btn-repo-blcm">Ir al repositorio</a>
+      </div>
+    </div>
+
+
+    <div class="card-proyecto-tienda" style="width: 18rem;">
+      <div class="card-body">
+        <img src="assets/Tienda.png" class="imagenTienda card-img-top" alt="40px">
+        <h5 class="card-title">Tienda Online</h5>
+        <p class="card-text">Proyecto TechShop usando HTML,CSS, Bootstrap y Springboot Java</p>
+        <a href="https://github.com/peper4948/tienda_k.git" class="btn-repo-tienda">Ir al repositorio</a>
+      </div>
+    </div>
+    <div class="card-proyecto-GUI" style="width: 18rem;">
+      <div class="card-body">
+        <img src="assets/PrograClienteServidor.png" class="imagenGUI card-img-top" alt="40px">
+        <h5 class="card-title">Canchas de Fut5</h5>
+        <p class="card-text">Proyecto Java cliente servidor concurrente</p>
+        <a href="https://github.com/peper4948/SC-303-Programacion-ClienteServidor-Concurrente.git"
+          class="btn-repo-GUI">Ir
+          al repositorio</a>
+      </div>
+    </div>
+
+    <div class="card-proyecto-poo" style="width: 18rem;">
+      <div class="card-body">
+        <img src="assets/HiperBanco.png" class=" imagenpoo card-img-top" alt="40px">
+        <h5 class="card-title">HiperBanco POO</h5>
+        <p class="card-text">Proyecto Java aplicando conocimientos de Programación Orientada a Objetos</p>
+        <a href="https://github.com/peper4948/SC-202-ProgramacionOrientadaAObjetos.git" class="btn-repo-poo">Ir al
+          repositorio</a>
+      </div>
+    </div>
+
+    <div class="card-proyecto-py" style="width: 18rem;">
+      <div class="card-body">
+        <img src="assets/ExploraMundo.png" class="imagenpy card-img-top" alt="40px">
+        <h5 class="card-title">Agencia de Viajes</h5>
+        <p class="card-text">Proyecto en python básico para agencia de viajes</p>
+        <a href="https://github.com/peper4948/SC-115-ProgramacionBasica.git" class="btn-repo">Ir al repositorio</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section>
+    <div class="skills-section">
+      <h2 class="section-title">Mis <span class="section-accent">Herramientas</span></h2>
+      <div class="section-line"></div>
+
+      <div class="skills-track-wrapper">
+        <div class="skills-track">
+          <!-- Primera copia -->
+          <img src="assets/aiven.png" alt="aiven">
+          <img src="assets/arduino.png" alt="arduino">
+          <img src="assets/bootstrap.png" alt="bootstrap">
+          <img src="assets/css.png" alt="css">
+          <img src="assets/html.png" alt="html">
+          <img src="assets/figma.png" alt="figma">
+          <img src="assets/firebase.png" alt="firebase">
+          <img src="assets/java.png" alt="java">
+          <img src="assets/python.png" alt="python">
+          <img src="assets/mysql.png" alt="mysql">
+          <img src="assets/sql-server.png" alt="sql-server">
+          <img src="assets/Scrum.png" alt="scrum">
+          <!-- Segunda copia (para que el loop sea continuo) -->
+          <img src="assets/aiven.png" alt="aiven">
+          <img src="assets/arduino.png" alt="arduino">
+          <img src="assets/bootstrap.png" alt="bootstrap">
+          <img src="assets/css.png" alt="css">
+          <img src="assets/html.png" alt="html">
+          <img src="assets/figma.png" alt="figma">
+          <img src="assets/firebase.png" alt="firebase">
+          <img src="assets/java.png" alt="java">
+          <img src="assets/python.png" alt="python">
+          <img src="assets/mysql.png" alt="mysql">
+          <img src="assets/sql-server.png" alt="sql-server">
+          <img src="assets/Scrum.png" alt="scrum">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto-section">
+    <div class="section-header">
+      <h2 class="section-title">Con<span class="section-accent">tacto</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contacto-wrapper">
+      <form class="contacto-form">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Tu nombre">
+        </div>
+        <div class="form-group">
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" placeholder="tu@correo.com">
+        </div>
+
+        <div class="form-group">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" placeholder="Titulo del mensaje">
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" rows="5" placeholder="Contactame"></textarea>
+        </div>
+        <button type="submit" class="btn-contacto">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="rutina.js"></script>
+</body>

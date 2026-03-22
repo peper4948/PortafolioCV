@@ -1,0 +1,630 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,500,700");
+
+.body{
+  font-family: "Nunito", sans-serif;
+}
+
+/* Sección completa */
+.home {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Fondo */
+.home__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("assets/fondo-code.jpg") center/cover no-repeat;
+  z-index: 0;
+  filter: brightness(0.4); /* oscurece para que el texto resalte */
+}
+
+/* Contenido encima */
+.home__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+}
+
+/* Foto de perfil */
+.home__profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+/* Texto */
+.home__title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.home__title--secondary {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* Navbar oculto arriba */
+/* Navbar oculto arriba */
+.navbar {
+  position: fixed;
+  top: -80px; /* escondido */
+  left: 0;
+  width: 100%;
+  transition: top 0.3s ease;
+  z-index: 1000;
+}
+
+/* Navbar transparente al inicio */
+.navbar {
+  background-color: transparent;
+  transition: all 0.3s ease;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+}
+/* ─── VARIABLES DE TEMA ─────────────────────────────────────── */
+.card-juego  { --accent: #22D3EE; --bg: #0e2a30; --bg-inner: #0d1a2e; --border: rgba(34, 211, 238, 0.2); --level-bg: #0d1a2e; }
+.card-juego2 { --accent: #FBBF24; --bg: #1f1505; --bg-inner: #2a1d07; --border: rgba(251, 191, 36, 0.2); --level-bg: #2a1d07; }
+.card-juego3 { --accent: #A78BFA; --bg: #1a1130; --bg-inner: #211040; --border: rgba(167, 139, 250, 0.2); --level-bg: #211040; }
+ 
+/* ─── CONTENEDOR ─────────────────────────────────────────────── */
+.about-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px;
+    background: #020617;
+    flex-wrap: wrap;
+}
+ 
+/* ─── CARD BASE ──────────────────────────────────────────────── */
+.card-juego,
+.card-juego2,
+.card-juego3 {
+    width: 360px;
+    background: var(--bg);
+    color: var(--accent);
+    border-radius: 20px;
+    padding: 25px;
+}
+ 
+/* ─── HEADER ─────────────────────────────────────────────────── */
+.card-header,
+.card-header2,
+.card-header3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.header-text h2 {
+    font-size: 14px;
+    opacity: 0.6;
+    margin: 0;
+}
+ 
+.header-text h3 {
+    font-size: 20px;
+    margin: 0;
+}
+ 
+.level,
+.level2,
+.level3 {
+    background: var(--level-bg);
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: var(--accent);
+}
+ 
+/* ─── SEPARADORES ────────────────────────────────────────────── */
+.card-info,  .card-info2,  .card-info3,
+.card-stats, .card-stats2, .card-stats3,
+.card-skills,.card-skills2,.card-skills3,
+.card-achievements, .card-achievements2, .card-achievements3 {
+    margin-top: 18px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+}
+ 
+/* ─── INFO ───────────────────────────────────────────────────── */
+.card-info p,
+.card-info2 p,
+.card-info3 p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+ 
+/* ─── STATS ──────────────────────────────────────────────────── */
+.stat,
+.stat2,
+.stat3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+ 
+.level-high {
+    color: floralwhite;
+    background: #22c55e;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+ 
+.level-mid {
+    color: floralwhite;
+    background: #eab308;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+ 
+/* ─── SKILLS ─────────────────────────────────────────────────── */
+.card-skills,
+.card-skills2,
+.card-skills3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+ 
+.skill,
+.skill2,
+.skill3 {
+    background: var(--bg-inner);
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 90px;
+    border: 1px solid var(--border);
+    color: var(--accent);
+}
+ 
+.skill small,
+.skill2 small,
+.skill3 small {
+    font-size: 11px;
+    opacity: 0.6;
+}
+ 
+/* ─── LOGROS ─────────────────────────────────────────────────── */
+.card-achievements p,
+.card-achievements2 p,
+.card-achievements3 p {
+    margin: 6px 0;
+    font-size: 13px;
+}
+
+/* ───  Proyectos-container ──────────────────────────────────────────────────── */
+.proyectos-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px;
+    background: #020617;
+    flex-wrap: wrap;
+}
+/* ─── Proyecto-py ───────────────────────────────────────────────────────────── */
+.card-proyecto-py {
+    width: 360px;
+    background: #0f2318;
+    color: #34D399;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.card-proyecto-py .card-title {
+    color: #34D399;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-proyecto-py .card-text {
+    color: #6ee7b7;
+    font-size: 14px;
+}
+
+.btn-repo {
+    background: #0a1f11;
+    color: #34D399;
+    border: 1px solid #1a5c35;
+    padding: 10px 24px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-repo:hover {
+    background: #052e16;
+    border-color: #34D399;
+}
+
+/* ─── Proyecto-hiperBanco ───────────────────────────────────────────────────── */
+.card-proyecto-poo {
+    width: 360px;
+    background: #1a0f1f;
+    color: #E879F9;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.card-proyecto-poo .card-title {
+    color: #E879F9;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-proyecto-poo .card-text {
+    color: #f0abfc;
+    font-size: 14px;
+}
+
+.btn-repo-poo {
+    background: #0d0812;
+    color: #E879F9;
+    border: 1px solid #4a1060;
+    padding: 10px 24px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-repo-poo:hover {
+    background: #2d0936;
+    border-color: #E879F9;
+}
+
+
+/* ─── Proyecto-canchas ───────────────────────────────────────────────────── */
+.card-proyecto-GUI {
+    width: 360px;
+    background: #1a0a0f;
+    color: #FB7185;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.card-proyecto-GUI .card-title {
+    color: #FB7185;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-proyecto-GUI .card-text {
+    color: #FB7185;
+    font-size: 14px;
+}
+
+.btn-repo-GUI {
+    background: #1a0a0f;
+    color: #FB7185;
+    border: 1px solid #FB7185;
+    padding: 10px 24px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-repo-GUI:hover {
+    background: #2d0936;
+    border-color: #FB7185;
+}
+/* ─── SEPARACIÓN ENTRE SECCIONES ────────────────────────────────────────────── */
+.about-container,
+.proyectos-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #020617;
+}
+
+/* ─── TÍTULOS DE SECCIÓN ─────────────────────────────────────────────────────── */
+.section-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e2e8f0;
+    margin-bottom: 12px;
+}
+
+.section-accent {
+    color: #22D3EE;
+}
+
+.section-line {
+    width: 60px;
+    height: 3px;
+    background: #22D3EE;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.imagenpy{
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #34D399;
+
+}
+.imagenpoo{
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #E879F9;
+}
+.imagenGUI{
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #FB7185;
+}
+/* ─── Proyecto-barber ───────────────────────────────────────────────────────── */
+.card-proyecto-barber {
+    width: 360px;
+    background: #1a1500;
+    color: #FBBF24;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.card-proyecto-barber .card-title {
+    color: #FBBF24;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-proyecto-barber .card-text {
+    color: #fde68a;
+    font-size: 14px;
+}
+
+.btn-repo-barber {
+    background: #120f00;
+    color: #FBBF24;
+    border: 1px solid #78450a;
+    padding: 10px 24px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-repo-barber:hover {
+    background: #2d1f00;
+    border-color: #FBBF24;
+}
+
+.imagenBarber {
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #FBBF24;
+}
+
+/* ─── Proyecto-BLCM ─────────────────────────────────────────────────────────── */
+.card-proyecto-Blcm {
+    width: 360px;
+    background: #0f1a1a;
+    color: #22D3EE;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.card-proyecto-Blcm .card-title {
+    color: #22D3EE;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-proyecto-Blcm .card-text {
+    color: #67e8f9;
+    font-size: 14px;
+}
+
+.btn-repo-blcm {
+    background: #0a1a1a;
+    color: #22D3EE;
+    border: 1px solid #164e63;
+    padding: 10px 24px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-repo-blcm:hover {
+    background: #083344;
+    border-color: #22D3EE;
+}
+
+.imagenBlcm {
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #22D3EE;
+}
+
+/* ─── Proyecto-tienda ───────────────────────────────────────────────────────── */
+.card-proyecto-tienda {
+    width: 360px;
+    background: #1a0e00;
+    color: #F97316;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.card-proyecto-tienda .card-title {
+    color: #F97316;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-proyecto-tienda .card-text {
+    color: #fdba74;
+    font-size: 14px;
+}
+
+.btn-repo-tienda {
+    background: #120a00;
+    color: #F97316;
+    border: 1px solid #7c2d12;
+    padding: 10px 24px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-repo-tienda:hover {
+    background: #2d1500;
+    border-color: #F97316;
+}
+
+.imagenTienda {
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #F97316;
+}
+
+
+/* ─── Hard Skills Ticker ─────────────────────────────────────────────────────── */
+.skills-section {
+    background: #020617;
+    padding: 100px 0 100px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.skills-track-wrapper {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 40px;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+.skills-track {
+    display: flex;
+    gap: 60px;
+    width: max-content;
+    animation: ticker 25s linear infinite;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.skills-track img {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(30%) brightness(0.85);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+@keyframes ticker {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* ─── Contacto ───────────────────────────────────────────────────────────────── */
+.contacto-section {
+    background: #020617;
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.contacto-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.contacto-form {
+    width: 100%;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.form-group label {
+    color: #94a3b8;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    padding: 12px 16px;
+    color: #e2e8f0;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    resize: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #334155;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #22D3EE;
+}
+
+.btn-contacto {
+    background: transparent;
+    color: #22D3EE;
+    border: 1px solid #22D3EE;
+    padding: 12px 32px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    align-self: flex-start;
+}
+
+.btn-contacto:hover {
+    background: #22D3EE;
+    color: #020617;
+}
