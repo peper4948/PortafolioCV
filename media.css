@@ -1,160 +1,83 @@
 @media (max-width: 991px) {
 
-  .navbar__menu {
-    display: flex;
+  .about-container,
+  .proyectos-container {
+    gap: 30px;
+    padding: 30px 20px;
   }
 
-  .navbar__links {
-    position: absolute;
+  .card-juego,
+  .card-juego2,
+  .card-juego3,
+  .card-proyecto-py,
+  .card-proyecto-poo,
+  .card-proyecto-GUI,
+  .card-proyecto-barber,
+  .card-proyecto-Blcm,
+  .card-proyecto-tienda {
     width: 100%;
-    height: 100vh;
+    max-width: 360px;
+  }
+
+  .home__content {
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.97);
-    font-size: 30px;
-    margin: 0 -20px;
-    z-index: 10;
-    transform: translateX(100%);
-    opacity: 0;
-    transition: all 0.5s;
-  }
-
-  .visible {
-    display: flex;
-    transform: translateX(0);
-    opacity: 1;
-    transition: all 0.5s;
-  }
-
-  .navbar__link {
-    padding-left: 0px;
-    margin-top: 30px;
-  }
-
-  section {
-    padding: 50px 0;
-  }
-
-  .home {
-    flex-direction: column;
-  }
-
-  .home__profile {
-    margin-bottom: 30px;
-    margin-right: 0;
+    text-align: center;
+    gap: 1rem;
+    padding: 0 20px;
   }
 
   .home__title {
-    font-size: 45px;
+    font-size: 2rem;
   }
 
-  .home__title--primary,
   .home__title--secondary {
-    font-size: 35px;
+    font-size: 1rem;
   }
 
-  .section__title {
-    font-size: 25px;
+  .contacto-section {
+    padding: 60px 20px;
   }
 
-  .section__title:after {
-    width: 110px;
-    height: 3px;
-  }
-
-  .section__subtitle {
-    
-    font-weight: normal;
-  }
-
-  .about__description {
-    padding-right: 0px;
-  }
-
-  .about__grid {
-    grid-template-columns: 1fr;
-  }
-
-  .skill__title {
-    grid-column: span 4;
-  }
-
-  .about__skills {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  
-  .button--cta {
-    margin-bottom: 30px;
-  }
-
-  .services__item {
-    padding: 15px;
-  }
-
-  .services__item h3 {
-    margin-bottom: 5px;
-  }
-
-  .services__grid,
-  .portfolio__grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+  .skills-section {
+    padding: 60px 0;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
 
-  .home__background {
-    background-image: url(./assets/bg6_responsive_webp.webp);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-  }
-
-  section {
-    padding: 20px 0;
-  }
-
-  .home__profile {
-    margin-bottom: 30px;
-  }
-
-  .home__title {
-    font-size: 30px;
-  }
-
-  .home__title--primary,
-  .home__title--secondary {
-    font-size: 25px;
-  }
-
-  .skill__title {
-    grid-column: span 3;
-  }
-
-  .about__skills {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .skill__item {
-    font-size: 50px;
-    padding: 5px;
-    min-width: 75px;
-    height: 85px;
-  }
-
-  .services__grid,
-  .portfolio__grid {
-    grid-template-columns: 1fr;
+  .about-container,
+  .proyectos-container {
+    padding: 20px 16px;
     gap: 20px;
   }
 
-  .contact__grid {
-    grid-template-columns: 1fr 1fr;
+  .home__profile {
+    width: 110px;
+    height: 110px;
   }
 
-  .contact__item {
-    padding: 0%;
-    border-radius: 10px;
-    transition: all 0.3s;
+  .home__title {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-header {
+    margin-bottom: 30px;
+  }
+
+  .card-juego,
+  .card-juego2,
+  .card-juego3,
+  .card-proyecto-py,
+  .card-proyecto-poo,
+  .card-proyecto-GUI,
+  .card-proyecto-barber,
+  .card-proyecto-Blcm,
+  .card-proyecto-tienda,
+  .card-proyecto-proximamente {
+    padding: 20px;
   }
 }

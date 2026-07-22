@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,500,700");
 
-.body{
+* {
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
 }
 
 /* Sección completa */
@@ -120,7 +125,8 @@
 .card-juego,
 .card-juego2,
 .card-juego3 {
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     background: var(--bg);
     color: var(--accent);
     border-radius: 20px;
@@ -256,7 +262,8 @@
 }
 /* ─── Proyecto-py ───────────────────────────────────────────────────────────── */
 .card-proyecto-py {
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     background: #0f2318;
     color: #34D399;
     border-radius: 20px;
@@ -292,7 +299,8 @@
 
 /* ─── Proyecto-hiperBanco ───────────────────────────────────────────────────── */
 .card-proyecto-poo {
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     background: #1a0f1f;
     color: #E879F9;
     border-radius: 20px;
@@ -329,7 +337,8 @@
 
 /* ─── Proyecto-canchas ───────────────────────────────────────────────────── */
 .card-proyecto-GUI {
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     background: #1a0a0f;
     color: #FB7185;
     border-radius: 20px;
@@ -414,7 +423,8 @@
 }
 /* ─── Proyecto-barber ───────────────────────────────────────────────────────── */
 .card-proyecto-barber {
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     background: #1a1500;
     color: #FBBF24;
     border-radius: 20px;
@@ -456,7 +466,8 @@
 
 /* ─── Proyecto-BLCM ─────────────────────────────────────────────────────────── */
 .card-proyecto-Blcm {
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     background: #0f1a1a;
     color: #22D3EE;
     border-radius: 20px;
@@ -498,7 +509,8 @@
 
 /* ─── Proyecto-tienda ───────────────────────────────────────────────────────── */
 .card-proyecto-tienda {
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     background: #1a0e00;
     color: #F97316;
     border-radius: 20px;
@@ -538,6 +550,39 @@
     border: 1px solid #F97316;
 }
 
+
+/* ─── Proyecto-próximamente ──────────────────────────────────────────────────── */
+.card-proyecto-proximamente {
+    width: 100%;
+    max-width: 360px;
+    flex-shrink: 0;
+    background: #0f172a;
+    border: 2px dashed #334155;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-proyecto-proximamente .proximamente-icon {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.card-proyecto-proximamente .card-title {
+    color: #94a3b8;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.card-proyecto-proximamente .card-text {
+    color: #64748b;
+    font-size: 14px;
+    margin: 0;
+}
 
 /* ─── Hard Skills Ticker ─────────────────────────────────────────────────────── */
 .skills-section {
@@ -649,4 +694,36 @@
 .btn-contacto:hover {
     background: #22D3EE;
     color: #020617;
+}
+/* ─── Proyecto-próximamente ──────────────────────────────────────────────────── */
+.card-proyecto-proximamente {
+    width: 100%;
+    max-width: 360px;
+    flex-shrink: 0;
+    background: #0f172a;
+    border: 2px dashed #334155;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-proyecto-proximamente .proximamente-icon {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.card-proyecto-proximamente .card-title {
+    color: #94a3b8;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.card-proyecto-proximamente .card-text {
+    color: #64748b;
+    font-size: 14px;
+    margin: 0;
 }
