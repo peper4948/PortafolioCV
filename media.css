@@ -13,6 +13,7 @@
   .card-proyecto-poo,
   .card-proyecto-GUI,
   .card-proyecto-barber,
+  .card-proyecto-Cesar,
   .card-proyecto-Blcm,
   .card-proyecto-tienda {
     width: 100%;
@@ -75,9 +76,10 @@
   .card-proyecto-poo,
   .card-proyecto-GUI,
   .card-proyecto-barber,
+  .card-proyecto-Cesar,
   .card-proyecto-Blcm,
   .card-proyecto-tienda,
-  .card-proyecto-proximamente {
+  .card-proyecto-BandCore {
     padding: 20px;
   }
 }

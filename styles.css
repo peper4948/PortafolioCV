@@ -551,37 +551,102 @@ body {
 }
 
 
-/* ─── Proyecto-próximamente ──────────────────────────────────────────────────── */
-.card-proyecto-proximamente {
+/* ─── Proyecto-BandCore ──────────────────────────────────────────────────────── */
+.card-proyecto-BandCore {
     width: 100%;
     max-width: 360px;
-    flex-shrink: 0;
-    background: #0f172a;
-    border: 2px dashed #334155;
+    background: #0f1a1a;
+    color: #22D3EE;
     border-radius: 20px;
     padding: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
-.card-proyecto-proximamente .proximamente-icon {
-    font-size: 40px;
-    margin-bottom: 12px;
-}
-
-.card-proyecto-proximamente .card-title {
-    color: #94a3b8;
+.card-proyecto-BandCore .card-title {
+    color: #22D3EE;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 6px;
 }
 
-.card-proyecto-proximamente .card-text {
-    color: #64748b;
+.card-proyecto-BandCore .card-text {
+    color: #67e8f9;
     font-size: 14px;
     margin: 0;
+}
+
+.card-proyecto-Cesar {
+    width: 100%;
+    max-width: 360px;
+    background: #1a120d;
+    color: #F97316;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.card-proyecto-Cesar .card-title {
+    color: #F97316;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-proyecto-Cesar .card-text {
+    color: #fdba74;
+    font-size: 14px;
+}
+
+.imagenBandCore,
+.imagenCfr {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.imagenBandCore {
+    border: 1px solid #22D3EE;
+}
+
+.imagenCfr {
+    border: 1px solid #F97316;
+}
+
+.btn-repo-bandCore,
+.btn-repo-cfr {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-repo-bandCore {
+    background: #083344;
+    border-color: #0e7490;
+    color: #67e8f9;
+}
+
+.btn-repo-bandCore:hover {
+    background: #164e63;
+    border-color: #22D3EE;
+    color: #ecfeff;
+}
+
+.btn-repo-cfr {
+    background: #431407;
+    border-color: #9a3412;
+    color: #fdba74;
+}
+
+.btn-repo-cfr:hover {
+    background: #7c2d12;
+    border-color: #F97316;
+    color: #fff7ed;
 }
 
 /* ─── Hard Skills Ticker ─────────────────────────────────────────────────────── */
@@ -694,36 +759,4 @@ body {
 .btn-contacto:hover {
     background: #22D3EE;
     color: #020617;
-}
-/* ─── Proyecto-próximamente ──────────────────────────────────────────────────── */
-.card-proyecto-proximamente {
-    width: 100%;
-    max-width: 360px;
-    flex-shrink: 0;
-    background: #0f172a;
-    border: 2px dashed #334155;
-    border-radius: 20px;
-    padding: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.card-proyecto-proximamente .proximamente-icon {
-    font-size: 40px;
-    margin-bottom: 12px;
-}
-
-.card-proyecto-proximamente .card-title {
-    color: #94a3b8;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 6px;
-}
-
-.card-proyecto-proximamente .card-text {
-    color: #64748b;
-    font-size: 14px;
-    margin: 0;
 }
